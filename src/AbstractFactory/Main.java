@@ -16,8 +16,8 @@ public class Main {
 
         Properties properties = new Properties();
         try {
-            InputStream inputStream = Main.class.getResourceAsStream("factory.properties");
-            properties.load(inputStream);
+            FileInputStream fileInputStream = new FileInputStream(System.getProperty("user.dir") + "/src/AbstractFactory/factory.properties");
+            properties.load(fileInputStream);
         }
         catch (IOException e) {
             System.out.println("File not found");
