@@ -2,3 +2,4 @@
 .out/
 *.iml
 *.class
+/out/production/Suunnittelumallit_Wiskari/AbstractFactory/factory.properties
