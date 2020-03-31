@@ -3,3 +3,4 @@
 *.iml
 *.class
 /out/production/Suunnittelumallit_Wiskari/AbstractFactory/factory.properties
+/out/production/Suunnittelumallit_Wiskari/META-INF/Suunnittelumallit_Wiskari.kotlin_module
