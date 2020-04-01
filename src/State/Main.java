@@ -6,9 +6,6 @@ public class Main {
 
         Plague corona = new Plague(new Outbreak());
 
-        for(int i=0; i < 14; i++) {
-            corona.spread();
-        }
-
+        while(!corona.genocide()) { corona.spread(); }
     }
 }

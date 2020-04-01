@@ -24,4 +24,7 @@ public class Outbreak implements PlagueState {
 
     @Override
     public boolean checkUpgradeCriteria() { return bodyCount >= 100; }
+
+    @Override
+    public boolean genocide() { return false; }
 }

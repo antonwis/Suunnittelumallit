@@ -3,6 +3,7 @@ package State;
 public class Pandemic implements PlagueState {
     private long bodyCount;
     private long maxCasualties = (long) Math.pow(999999999, 2);
+    private boolean genocide;
 
     public Pandemic(long bodyCount) {
         this.bodyCount = bodyCount;
@@ -19,10 +20,14 @@ public class Pandemic implements PlagueState {
 
     @Override
     public void evolve(Plague plague) {
-        System.out.println("Next stop: Space!");
+        System.out.println("Everyone is either infected or dead. Next stop: Space!");
+        genocide = true;
 
     }
 
     @Override
     public boolean checkUpgradeCriteria() { return bodyCount >= maxCasualties; }
+
+    @Override
+    public boolean genocide() { return genocide; }
 }

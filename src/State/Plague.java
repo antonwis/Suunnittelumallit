@@ -20,4 +20,6 @@ public class Plague {
         state.spread(this);
     }
 
+    public boolean genocide() { return state.genocide(); }
+
 }
