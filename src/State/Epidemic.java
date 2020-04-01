@@ -24,8 +24,5 @@ public class Epidemic implements PlagueState {
     }
 
     @Override
-    public boolean checkUpgradeCriteria() {
-        if(bodyCount >= 5000) return true;
-        else return false;
-    }
+    public boolean checkUpgradeCriteria() { return bodyCount >= 5000; }
 }

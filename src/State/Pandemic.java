@@ -24,8 +24,5 @@ public class Pandemic implements PlagueState {
     }
 
     @Override
-    public boolean checkUpgradeCriteria() {
-        if(bodyCount >= maxCasualties) return true;
-        else return false;
-    }
+    public boolean checkUpgradeCriteria() { return bodyCount >= maxCasualties; }
 }
