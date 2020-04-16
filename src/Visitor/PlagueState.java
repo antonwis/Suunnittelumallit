@@ -6,4 +6,5 @@ public interface PlagueState {
     public boolean checkUpgradeCriteria();
     public boolean genocide();
     void accept(Visitor visitor);
+    void bonusSpread(long bodycount);
 }

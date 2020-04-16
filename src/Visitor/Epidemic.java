@@ -34,4 +34,10 @@ public class Epidemic implements PlagueState {
         visitor.visit(this);
     }
 
+    @Override
+    public void bonusSpread(long bodycount) {
+        bodyCount += bodycount;
+        System.out.println("Additional " + bodycount + " people infected.");
+    }
+
 }
